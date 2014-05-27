@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	var pollId = {{pollId}};
+</script>
+<div data-ng-controller="PollCtrl">
+	<div data-ng-if="!voted">
+		<h1>[[pollData.pollname]]</h1>
+		<div class="row">
+			<div data-ng-repeat="question in pollData.questions" class="question-container">
+					<p class="question">[[question.content]]</p>
+					<form name="[[question.id]]" >
+						<div data-ng-repeat="answer in question.answers">
+						<label><input type="radio" data-ng-model="votes[question.id]" name="[[question.id]]" value="[[answer.id]]">[[answer.content]]</label>
+					</div>
+					</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 col-sm-4 send-row">
+				<div class="create-survey" data-ng-click="vote()">Send Votes <i class="arrow"></i></div>
+			</div>
+			<div class="col-xs-6 col-sm-4 send-row">
+				<div class="create-survey" data-ng-click="viewResults()">View Results <i class="arrow"></i></div>
+			</div>
+		</div>
+	</div>
+	<div data-ng-if="voted">
+		<div data-ng-repeat="question in pollData.questions" class="question-container"
+out>					<p class="question">[[question.content]]</p>
+						<div data-ng-repeat="answer in question.answers">
+						[[answer.content]] -- [[answer.votes]]
+					</div>
+			</div>
+
+	</div>
+	<div id="test"></div>
+</div>

@@ -1,0 +1,55 @@
+<div class="create-poll" data-ng-controller="NewPollCtrl" data-ng-if="displayPoll">
+	<h2 class="poll-name-label">Poll Name:</h2> <input data-ng-model="pollName" data-ng-class="{'color-warning': pollNameWarning}"/><p class="warning">[[pollNameWarning]]</p><br>
+	<div class="row">
+		<div class="question-container adding" data-ng-repeat="question in questions track by $index">
+			<p class="question visible-xs">Question [[$index+1]]:</p>
+			<div class="row question offset hidden-xs">
+				<div class="col-xs-1 col-xs-offset-1">
+					<p class="float-label question-col-label">Question:</p>
+				</div>
+				<div class="col-xs-10">
+					<input data-ng-model="question.content" data-ng-click="dewarn(question)" data-ng-class="{'color-warning': question.warning}" /><p class="warning">[[question.warning]]</p>
+				</div>
+			</div>
+			<p class="question-options">
+				<span class="glyphicon glyphicon-remove" data-ng-click="removeQuestion($index)"></span> 
+				<span data-ng-if="$index>0" data-ng-click="moveUp($index)" class="glyphicon glyphicon-arrow-up"></span> 
+				<span data-ng-if="$index<questions.length-1" data-ng-click="moveDown($index)" class="glyphicon glyphicon-arrow-down"></span> 
+			</p>
+			<div class="row questions visible-xs">
+				<div class="col-xs-2 col-xs-offset-1">
+					<p class="float-label question-col-label">Question:</p>
+				</div>
+				<div class="col-xs-6">
+					<input data-ng-model="question.content" data-ng-click="dewarn(question)" data-ng-class="{'color-warning': question.warning}" /><p class="warning">[[question.warning]]</p> 
+				</div>
+			</div>
+			<div class="row answers" data-ng-repeat="answer in question.answers track by $index">
+				<div class="col-xs-2 col-xs-offset-1">
+					<p class="float-label">Answer [[$index+1]]:</p>
+				</div>
+				<div class="col-xs-9">
+					<input data-ng-class="{'color-warning': answer.warning}" data-ng-model="answer.content" data-ng-click="dewarn(answer)" />
+					<span data-ng-click="removeAnswer($parent.$index, $index)" class="glyphicon glyphicon-minus negative"></span>
+					<p class="warning">[[answer.warning]]</p>
+			
+				</div>
+			</div>
+			<div class="row add-answer" data-ng-click="addAnswer($index)">
+				<div class="col-xs-2 col-xs-offset-1">
+					<p class="float-label">Add answer...</p>
+				</div>
+				<div class="col-xs-9">
+					<input class="float-label" disabled/> <span class="glyphicon glyphicon-plus"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="question-container add"  data-ng-click="addQuestion()">
+		<button class="question">Add Question   <span class="glyphicon glyphicon-plus"></span></button>
+	</div>
+		<div class="col-xs-8 col-sm-4 send-row">
+			<div class="create-survey" data-ng-click="send()">Create Survey <i class="arrow"></i></div>
+		</div>
+</div>

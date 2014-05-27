@@ -1,0 +1,245 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\000031}}
+.warning {
+  display: inline;
+  color: tomato; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\000034}}
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  background-color: #2c343b;
+  color: #e5e1d1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\000039}}
+h1, h2, h3 {
+  color: #c44741;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000313}}
+p {
+  font-weight: thin;
+  font-size: 18px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000317}}
+button {
+  outline: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000320}}
+input {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #2c343b;
+  outline: 0;
+  height: 40px;
+  border: none;
+  border-radius: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000328}}
+  input:focus {
+    box-shadow: 0px 0px 7px 2px #52616d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000331}}
+.question-container.add {
+  cursor: pointer;
+  border: 1px solid rgba(229, 225, 209, 0.25);
+  height: 15px;
+  margin-bottom: 15px;
+  transition: 0.25s linear all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000337}}
+  .question-container.add:hover {
+    border: 1px solid #e5e1d1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000341}}
+button.question {
+  opacity: 1;
+  border: none;
+  border-radius: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000346}}
+.container.title {
+  margin-top: 50px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000347}}
+  .container.title .button-row {
+    margin-top: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000349}}
+  .container.title .arrow {
+    margin-top: -18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000357}}
+  .container.title.ng-hide-add {
+    display: block !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000359}}
+  .container.title.ng-hide {
+    margin-top: 0px;
+    opacity: 0;
+    height: 0%;
+    padding-bottom: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000365}}
+.create-poll {
+  margin-top: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000367}}
+  .create-poll.ng-enter {
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000370}}
+  .create-poll.ng-enter {
+    opacity: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000372}}
+  .create-poll.ng-enter.ng-enter-active {
+    opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000375}}
+.create-survey {
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #52616d;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.18);
+  transition: 0.75s all;
+  margin-bottom: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000385}}
+  .create-survey:hover {
+    transition: 0.75s all;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.58); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000389}}
+.button-row {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\0000392}}
+.arrow {
+  position: absolute;
+  right: 25px;
+  display: inline;
+  height: 22px;
+  width: 14px;
+  float: right;
+  margin-top: -18px;
+  top: 50%;
+  background-image: url("images/arrow.png");
+  margin-right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003104}}
+.question-options {
+  font-size: 20px;
+  display: inline-block;
+  margin-top: -30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #2c343b;
+  float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003115}}
+  .question-options .glyphicon {
+    cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003118}}
+.question-container {
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 15px;
+  border: 1px solid #e5e1d1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003123}}
+  .question-container.ng-enter {
+    transition: 0.5s linear all;
+    -webkit-transition: 0.5s linear all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003126}}
+  .question-container.ng-leave {
+    transition: 0.25s linear all;
+    -webkit-transition: 0.25s linear all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003129}}
+  .question-container.ng-enter, .question-container.ng-leave.ng-leave-active {
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003133}}
+  .question-container.ng-enter.ng-enter-active, .question-container.ng-leave {
+    opacity: 1;
+    overflow: visible;
+    max-height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003137}}
+  .question-container input {
+    margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003139}}
+  .question-container .question {
+    transition: 1s linear all;
+    -webkit-transition: 1s linear all;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: -30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #2c343b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003152}}
+  .question-container .questions, .question-container .answers {
+    margin-top: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003155}}
+    .question-container .questions.ng-enter, .question-container .answers.ng-enter {
+      transition: 0.25s linear all;
+      -webkit-transition: 0.25s linear all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003158}}
+    .question-container .questions.ng-enter, .question-container .answers.ng-enter {
+      opacity: 0;
+      max-height: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003161}}
+    .question-container .questions.ng-enter.ng-enter-active, .question-container .answers.ng-enter.ng-enter-active {
+      opacity: 1;
+      max-height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003164}}
+  .question-container .add-answer {
+    transition: 0.25s linear all;
+    cursor: pointer;
+    margin-top: 15px;
+    opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003165}}
+    .question-container .add-answer input {
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003171}}
+    .question-container .add-answer:hover {
+      opacity: 0.8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003174}}
+  .question-container.adding button {
+    color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003176}}
+  .question-container.adding p.float-label {
+    float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003181}}
+.create-poll .question-container .question.offset {
+  width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003183}}
+  .create-poll .question-container .question.offset input {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003186}}
+.send-row {
+  margin-top: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003189}}
+.question-col-label {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003192}}
+.color-warning {
+  box-shadow: 0px 0px 7px 1px tomato; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003195}}
+.negative {
+  cursor: pointer;
+  color: tomato; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/T\/Desktop\/Projects\/FuckingPolls\/app\/static\/styles\/main\.sass}line{font-family:\00003200}}
+.poll-name-label {
+  display: inline;
+  margin-right: 10px;
+  color: #e5e1d1; }

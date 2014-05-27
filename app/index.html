@@ -1,0 +1,39 @@
+<html data-ng-app="Polls">
+<head>
+	<title>Title</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,200' rel='stylesheet' type='text/css'>
+	<script src="{{ static_url("bower_components/jquery/jquery.min.js")}}"></script>
+	<script src="{{ static_url("bower_components/d3/d3.js")}}"></script>
+	<script src="{{ static_url("bower_components/angular/angular.min.js")}}"></script>
+
+	<script src="{{ static_url("bower_components/angular-animate/angular-animate.min.js")}}"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ static_url("bower_components/bootstrap/dist/css/bootstrap.css") }}">
+	<link rel="stylesheet" type="text/css" href="{{ static_url("styles/main.css") }}">
+	<script src="{{ static_url("scripts/script.js")}}"></script>
+</head>
+<body data-ng-controller="ParentCtrl">
+	<div class="container title" data-ng-hide="pollId || displayPoll">
+		<div class="row">
+			<div class="col-xs-12 title">
+					<h1>Pollnado</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 sub-title">
+					<p>Create quickly sharable surveys, get great results.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3  button-row">
+					<div data-ng-click="display()" class="create-survey">Create a Survey Now <i class="arrow"></i>
+						</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		{% module Template(template, pollId=pollId) %}
+	</div>
+</body>
+</html>
