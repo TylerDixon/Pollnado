@@ -9,6 +9,8 @@ import os
 db = torndb.Connection("localhost:3306", "pollnado",
 	user="root", password="root")
 
+port = 8000
+
 class VoteBuffer(object):
 	def __init__(self):
 		self.callbacks = {};
@@ -104,7 +106,7 @@ class NewPollHandler(tornado.web.RequestHandler):
 		pollData = data["poll"]
 		poll = Poll(None)
 		poll_id = poll.CreatePoll(pollData["pollname"], pollData["questions"]);
-		self.finish(dict(pollId=poll_id))
+		self.finish(dict(pollId=poll_id, port=port))
 
 class PollHandler(tornado.web.RequestHandler):
 	def get(self, poll_id):
@@ -139,7 +141,7 @@ def main():
 		static_path=os.path.join(os.path.dirname(__file__), "app/static"),
     	xsrf_cookies= False,
 	)
-	app.listen(5000)
+	app.listen(port)
 	IOLoop.instance().start()
 
 if __name__ == "__main__":

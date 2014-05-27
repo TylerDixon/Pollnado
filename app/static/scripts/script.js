@@ -71,7 +71,7 @@ pollsApp.controller('NewPollCtrl', ['$scope','$http', function($scope, $http){
 		  url: '/newpoll',
 		  data: angular.toJson(data),
 		  success: function(data){
-			window.location.href = "http://localhost/poll/"+data.pollId;
+			window.location.href = "http://localhost:" + data.port + "/poll/"+data.pollId;
 		  }
 		});
 
